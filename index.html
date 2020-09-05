@@ -93,7 +93,7 @@
         </div>
     </div><br>
 
-    <div class="container-fluid" id="order">
+    <div class="container-fluid bg-dark" id="order">
         <div class="order">
             <h4 class="text-center">Select your favourite pizza,crust and toppings and Order now</h4>
         </div>
@@ -119,53 +119,61 @@
                     </div>
                     <!-- sizes -->
                     <div class="form-group">
-                        <label for="" class="text-black">Select you preferable size;</label>
+                        <label for="size" class="mysize">Select you preferable size;</label>
                         <select class="form-control" id="size">
-                            <option value="1">Small @ Ksh. 1000</option>
-                            <option value="2">medium @ Ksh. 1300</option>
-                            <option value="3">Large @ Ksh. 1700</option>
+                            <option value="1">Small ...sh. 1000</option>
+                            <option value="2">medium ...sh. 1700</option>
+                            <option value="3">Large ...sh. 1900</option>
 
                         </select>
                     </div>
                     <!-- crust -->
                     <div class="form-group">
-                        <label for="" class="text-black">Select your crusts;</label>
+                        <label for="" class="text-black">Select Crust;</label>
                         <select class="form-control" id="crust">
-                            <option value="1">Thin Crust Pizza @ ksh. 50</option>
-                            <option value="2">Thick Crust Pizza @ ksh. 60</option>
+                            <option value="1">crispy sh.109</option>
+                            <option value="2">stuffed sh.115</option>
+                            <option value="3">glutten-free sh.130</option>
+
 
                         </select>
                     </div>
                     <!-- toppings -->
                     <div class="form-group">
-                        <label for="" class="text-red">Select your toppings;</label>
-                        <select class="form-control" id="topping">
-                            <option value="1">Roast chicken @ ksh.100</option>
-                            <option value="2">Olive oil @ ksh.130</option>
-                            <option value="3"> Bread goat @ ksh.140</option>
-                            <option value="4">Spinach @ ksh.150</option>
-                            <option value="5">Romaine@ ksh. 120</option>
-                            <option value="6">Tomato @ ksh. 100</option>
+                        <label for="flavour">Select Topping</label>
+                        <select class="form-control" id="topping" required>
+                            <option value="1">Tomato sh.120</option>
+                            <option value="2">Onions sh.40</option>
+                            <option value="3">Mushroom sh.95</option>
+                            <option value="4">Green Pepper sh.50</option>
+                            <option value="5">Spinach sh.70</option>
+                            <option value="5">Beef Peperoni sh.125</option>
+                            <option value="6">Periperi Chicken sh.60</option>
                         </select>
                     </div>
                     <!-- quantity -->
                     <div class="form-group">
-                        <label for="quantity">Select number of pizza</label>
-                        <input type="number" id="quantity" name="quantity" min="1"><br><br>
+                        <label for="">Number of Pizza's</label>
+                        <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1"
+                            required>
+                    </div>
+                    <div class="submit pb-3">
+                        <button type="submit" id="form" class="btn btn-danger">Check Out</button>
+                    </div>
 
-                    </div>
-                    <!-- delivery -->
-                    <div class="form-group">
-                        <label for="">Select your delivery</label>
-                        <select name="" class="form-group" id="delivery">
-                            <option value="">Select mode of delivery</option>
-                            <option value="pick">Pick</option>
-                            <option value="deliver">deliver</option>
-                        </select><br>
-                        <button type="submit">make order</button>
-                    </div>
                 </form>
             </div>
+            <!-- delivery -->
+            <div class="form-group">
+                <label for="">Select your delivery</label>
+                <select name="" class="form-group" id="delivery">
+                    <option value="">Select mode of delivery</option>
+                    <option value="pick">Pick</option>
+                    <option value="deliver">deliver</option>
+                </select><br>
+                <button type="submit">make order</button>
+            </div>
+            </form>
         </div>
     </div>
 
