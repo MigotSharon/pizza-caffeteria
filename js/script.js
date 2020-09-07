@@ -30,42 +30,61 @@ var pizzatopping = ['Tomato', 'Onions', 'Mushroom', 'Green Pepper', 'Spinach', '
 var pizzacrust = ['Crispy', 'Stuffed', 'Gluten-free']
 
 $(document).ready(function () {
-    $("#myForm").submit(function (event) {
+    $("#form").click(function (event) {
         event.preventDefault();
-        var name = parseInt($("#name").val());
+        var name = ($("#flavour").val());
+        alert(name);
         var size = parseInt($("#size").val());
+        alert(size);
         var crust = parseInt($("#crust").val());
+        alert(crust);
         var topping = parseInt($("#topping").val());
-        var quantity = parseInt($("input#quantity").val());
-        var delivery = $("#delivery").val();
+        alert(topping);
+        var number = parseInt($("input#number").val());
+        alert(number);
 
-        pizzprice = prices[size - 1]
-
-        toppizza = toppingprice[topping - 1]
-
-        crustpizza = crustPrices[crust - 1]
-
+        var pizzasize = pizzasize[size - 1]
+        var pizzacrust = pizzacrust[crust - 1]
+        var pizzatopping = pizzatopping[topping - 1]
 
 
 
-        newpizzaorder = new Getpizza(pizaaprice, crustpizaa, toppizaa)
+        pizaaprice = prices[size - 1]
+
+        toppizaa = toppingprices[topping - 1]
+
+        crustpizaa = crustPrices[crust - 1]
+
+        newpizzaorder = new Getpizza(name, pizzasize, pizzacrust, pizzatopping)
+
+        newTotal = new Total(pizaaprice, crustpizaa, toppizaa, number)
 
 
-        $(function () {
-            $("#delivery").click(function () {
-                // $("#data").show();
+        if (number) {
+            alert("Your order is" + newTotal.totalprice())
+            console.log(newTotal.totalprice())
+        }
+        if (number) {
+            alert("Your pizza order" + newpizzaorder.fullorder())
+            console.log(newpizzaorder.fullorder())
+        }
 
-                let inputedName = $("#name").val();
-                let inputedPhone = $("#phone").val();
-                let inputedLocation = $("#location").val();
-                alert(inputedName + " " + "We have recieved your order and the delivery wil be made at " + inputedLocation)
-            });
+    });
 
-            $("#pick").click(function () {
-                alert("Thank you for choosing Us")
-            })
+});
+$(function () {
+    $("#delivery").click(function () {
+        // $("#data").show();
+
+        let inputedName = $("#name").val();
+        let inputedPhone = $("#phone").val();
+        let inputedLocation = $("#location").val();
+        alert(inputedName + " " + "We have recieved your order and the delivery wil be made at " + inputedLocation)
+    });
+
+    $("#pick").click(function () {
+        alert("Thank you for choosing Us")
+    })
 
 
-        });
-
-
+});
