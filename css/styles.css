@@ -14,8 +14,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 30%;
     border-radius: 50px;   
+}
+
+
+.nav-link-custom:hover{
+    color:gold;
 }
 
 #about p{
@@ -23,14 +28,6 @@
     color: yellow;
     font-size: 20px;
 } 
-
-.text-center{
-    line-height: 5vh;
-}
-
-.nav-link-custom:hover{
-    color: salmon;
-}
 
 #contact{
     margin-top: 50px;
