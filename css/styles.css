@@ -8,19 +8,16 @@
         padding-top: 20%;
 }
 
-        
-
-
-
-
  #about{
     background-image:  url(../images/carissa-gan-_0JpjeqtSyg-unsplash.jpg);
     background-position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding-top: 20%;    
+    padding-top: 20%;
+    border-radius: 50px;   
 }
+
 #about p{
     font-weight: bolder;
     color: yellow;
