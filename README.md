@@ -5,8 +5,13 @@
 * Migot Sharon
  
 # Project description
-* 
+* This is a pizza website that allows users to view ,order different type of Pizzas and get delivered to their own location.
 
+# setup instruction
+* Open terminal (Ctrl +Alt+ T)
+* git clone 
+* cd pizza-caffeteria
+* code . (Visual Studio Code)
 
 # BDD
 
