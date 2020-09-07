@@ -51,54 +51,54 @@
 
     <!-- our menu -->
     <section>
-    <div class="container-fluid">
-        <div class="menu" id="menu">
-            <h2 class="text-center">MENU</h2>
-        </div>
-        <div class="controls-top ">
-            <h2 class="text-white text-center offers">What We Offer</h2>
-        </div>
-        <div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="./images/amirali-mirhashemian-w1iMfs6yxuo-unsplash.jpg" alt=""
-                            width="200" height="200">
-                        <div class="card-body">
-                            <h3 class="card-title">pork sh.1,000</h3>
+        <div class="container-fluid">
+            <div class="menu" id="menu">
+                <h2 class="text-center">MENU</h2>
+            </div>
+            <div class="controls-top ">
+                <h2 class="text-white text-center offers">What We Offer</h2>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./images/amirali-mirhashemian-w1iMfs6yxuo-unsplash.jpg"
+                                alt="" width="200" height="200">
+                            <div class="card-body">
+                                <h3 class="card-title">pork sh.1,000</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="./images/mona-miller-2MHH_xjkwgw-unsplash.jpg" alt="" width="200"
-                            height="200">
-                        <div class="card-body">
-                            <h3 class="card-title"> cheeseburger sh.3,000</h3>
+                    <div class="col-md-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./images/mona-miller-2MHH_xjkwgw-unsplash.jpg" alt=""
+                                width="200" height="200">
+                            <div class="card-body">
+                                <h3 class="card-title"> cheeseburger sh.3,000</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="./images/alan-hardman-SU1LFoeEUkk-unsplash.jpg" alt=""
-                            width="200" height="186">
-                        <div class="card-body">
-                            <h3 class="card-title">Hawaiian-BBQ-Chicken-PIzza sh.1,500</h3>
+                    <div class="col-md-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./images/alan-hardman-SU1LFoeEUkk-unsplash.jpg" alt=""
+                                width="200" height="186">
+                            <div class="card-body">
+                                <h3 class="card-title">Hawaiian-BBQ-Chicken-PIzza sh.1,500</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-2">
-                        <img class="card-img-top" src="./images/mink-mingle-IX6vgLXvNSY-unsplash.jpg" alt="" width="200"
-                            height="200">
-                        <div class="card-body">
-                            <h3 class="card-title"> Meat-Deluxe sh.1,000</h3>
+                    <div class="col-md-3">
+                        <div class="card mb-2">
+                            <img class="card-img-top" src="./images/mink-mingle-IX6vgLXvNSY-unsplash.jpg" alt=""
+                                width="200" height="200">
+                            <div class="card-body">
+                                <h3 class="card-title"> Meat-Deluxe sh.1,000</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div><br>
+        </div><br>
     </section>
 
     <div class="card-footer">
@@ -168,50 +168,66 @@
                     <div class="submit pb-3">
                         <button type="submit" id="form" class="btn btn-danger">Check Out</button>
                     </div>
-
                 </form>
             </div>
+
             <!-- delivery -->
-            <div class="form-group">
-                <label for="">Select your delivery</label>
-                <select name="" class="form-group" id="delivery">
-                    <option value="">Select mode of delivery</option>
-                    <option value="pick">Pick</option>
-                    <option value="deliver">deliver</option>
-                </select><br>
-            </div>
-            </form>
-        </div>
-    </div>
 
-    <div class="container-fluid">
-        <div id="contact">
-            <h5 class="text-center">Contact Information</h5>
-            <p>Book now +254-790-437-491 or mail at:</p>
-            <form action="form-group" id="myForm">
-                <div class="container">
-                    <input class="form-control bg-transparent name" type="name" placeholder="name" name="NAME" class=""
-                        id="my-name" placeholder="Name" required=""><br><br>
-                    <input type="email" class="form-control bg-transparent email" id="my-email" placeholder="Email"
-                        required="" type="email" value="" name="EMAIL" class="required email"><br>
-                    <input type="text" name="message" id="my-message" class="form-control bg-transparent"
-                        placeholder="message" required=""><br><br>
-                    <button type="submit" id="btn1">submit</button>
-                </div>
-            </form>
+            <div class="col-md-6 text-white">
+                <div class="order-summary pt-3" id="sum-order">
+                    <h2 class="text-center" id="summary">Order Summary</h2>
+                    <ol id="list" class="text-center sum">
+                    </ol>
+                    <div class="order-button text-center">
+                        <form action="" class="form-group data" id="data">
+                            <div class="form-group">
+                                <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control cdata" id="phone"
+                                    placeholder="Enter your phone number: ">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control cdata" id="location"
+                                    placeholder="Enter the location: ">
+                            </div>
+                        </form>
+                        <button class="btn btn-warning" id="delivery">Delivery</button>
+                        <button class="btn btn-warning" id="pick">Pick Up</button>
+                    </div>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text">Location<br><br>
-                        Sarit centre mall</p>
                 </div>
             </div>
-            <div class="footer">
-                <p>Copyright (c) 2020 MigotSharon</p>
-            </div>
-        </div>
-        <script src="./js/jquery.min.js"></script>
-        <script src="./js/script.js"></script>
+
+            <div class="container-fluid">
+                <div id="contact">
+                    <h5 class="text-center">Contact Information</h5>
+                    <p>Book now +254-790-437-491 or mail at:</p>
+                    <form action="form-group" id="myForm">
+                        <div class="container">
+                            <input class="form-control bg-transparent name" type="name" placeholder="name" name="NAME"
+                                class="" id="my-name" placeholder="Name" required=""><br><br>
+                            <input type="email" class="form-control bg-transparent email" id="my-email"
+                                placeholder="Email" required="" type="email" value="" name="EMAIL"
+                                class="required email"><br>
+                            <input type="text" name="message" id="my-message" class="form-control bg-transparent"
+                                placeholder="message" required=""><br><br>
+                            <button type="submit" id="btn1">submit</button>
+                        </div>
+                    </form>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text">Location<br><br>
+                                Sarit centre mall</p>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright (c) 2020 MigotSharon</p>
+                    </div>
+                </div>
+                <script src="./js/jquery.min.js"></script>
+                <script src="./js/script.js"></script>
 </body>
 
 </html>
