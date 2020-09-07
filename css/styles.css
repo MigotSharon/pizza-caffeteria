@@ -11,22 +11,20 @@
 }
 
 
-#about{
+ #about{
     background-image:  url(../images/carissa-gan-_0JpjeqtSyg-unsplash.jpg);
     background-position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 60vh; */
     text-align: center;
-    padding-top: 20%;
-
-    
-}
+    padding-top: 20%;    
+} 
 
 .text-center{
     line-height: 5vh;
 }
 
-#menu{
-    /* padding-top: 5%; */
+.nav-link-custom:hover{
+    color: salmon;
 }
