@@ -32,7 +32,7 @@ var pizzacrust = ['Crispy', 'Stuffed', 'Gluten-free']
 $(document).ready(function () {
     $("#form").click(function (event) {
         event.preventDefault();
-        var name = ($("#flavour").val());
+        var name = ($("#name").val());
         alert(name);
         var size = parseInt($("#size").val());
         alert(size);
@@ -40,7 +40,7 @@ $(document).ready(function () {
         alert(crust);
         var topping = parseInt($("#topping").val());
         alert(topping);
-        var number = parseInt($("input#number").val());
+        var number = parseInt($("#number").val());
         alert(number);
 
         var pizzasize = pizzasize[size - 1]
