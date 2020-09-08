@@ -75,7 +75,6 @@ $(document).ready(function () {
 $(function () {
     $("#delivery").click(function () {
         // $("#data").show();
-
         let inputedName = $("#name").val();
         let inputedPhone = $("#phone").val();
         let inputedLocation = $("#location").val();
